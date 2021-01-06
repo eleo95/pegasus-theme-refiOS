@@ -1,12 +1,14 @@
-![](.meta/screenshot.jpg)
+# RefiOS (a fork of Flixnet)
 
-# Flixnet theme for Pegasus
+![](.meta/screenshot.png)
 
-A theme ispired by smart TVs and video streaming applications.
+# RefiOS theme for Pegasus
+
+IMPORTANT: This is a fork of [Flixnet](https://github.com/mmatyas/pegasus-theme-flixnet) by Mátyás Mustoha. A theme inspired by smart TVs and video streaming applications. RefiOS is a theme for [Pegasus Frontend](http://pegasus-frontend.org/).
 
 ## Installation
 
-[Download](https://github.com/mmatyas/pegasus-theme-flixnet/archive/master.zip) and extract the theme to your [theme directory](http://pegasus-frontend.org/docs/user-guide/installing-themes). You can then select it in the settings menu of Pegasus.
+[Download](https://github.com/eleo95/pegasus-theme-refiOS/archive/master.zip) and extract the theme to your [theme directory](http://pegasus-frontend.org/docs/user-guide/installing-themes). You can then select it in the settings menu of Pegasus.
 
 ## License
 

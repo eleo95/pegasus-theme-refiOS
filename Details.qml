@@ -22,9 +22,9 @@ import "qrc:/qmlutils" as PegasusUtils
 
 Item {
     property var game: null
-
     visible: game
-
+    // FontLoader { id: roboto_light; source: "assets/fonts/Roboto-Light.ttf"}
+    // FontLoader { id: roboto_thin; source: "assets/fonts/Roboto-Thin.ttf"}
     Text {
         id: title
         text: game ? game.title : ""
@@ -35,8 +35,8 @@ Item {
         color: "#eee"
         font {
             pixelSize: vpx(28)
-            family: globalFonts.sans
-            bold: true
+            family:  roboto_light.name
+            weight: Font.Light
         }
     }
 

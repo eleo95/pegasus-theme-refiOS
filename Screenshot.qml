@@ -30,42 +30,42 @@ Item {
         height: parent.height
         width: height
         anchors.right: parent.right
+        anchors.top:parent.top
 
         source: (game && game.assets.screenshots[0]) || ""
         sourceSize { width: 512; height: 512 }
         asynchronous: true
-        fillMode: Image.PreserveAspectFit
-
-        onStatusChanged: if (status == Image.Ready) {
-            width = height * implicitWidth / implicitHeight;
-        }
+        fillMode: Image.PreserveAspectCrop
     }
 
     LinearGradient {
         width: img.width
-        height: labelHeight * 2
+        height: labelHeight
+        visible: img.source != ""
 
+        anchors.right: img.right
         anchors.bottom: img.bottom
 
         start: Qt.point(0, height)
         end: Qt.point(0, 0)
         gradient: Gradient {
-            GradientStop { position: 0.0; color: "#FF000000" }
-            GradientStop { position: 1.0; color: "#00000000" }
+            GradientStop { position: 0.0; color: "#FF07131d" }
+            GradientStop { position: 1.0; color: "#0007131d" }
         }
     }
 
     LinearGradient {
-        width: img.width * 0.25
+        width: img.width * 0.30
         height: img.height
-
+        visible: img.source != ""
         anchors.left: img.left
+        
 
         start: Qt.point(0, 0)
         end: Qt.point(width, 0)
         gradient: Gradient {
-            GradientStop { position: 0.0; color: "#FF000000" }
-            GradientStop { position: 1.0; color: "#00000000" }
+            GradientStop { position: 0.0; color: "#FF07131d" }
+            GradientStop { position: 1.0; color: "#0007131d" }
         }
     }
 }
